@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: test-demo-app-deployment
+  name: test-demo-app-deployment
+  namespace: demo-ops
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: test-demo-app-deployment
+  template:
+    metadata:
+      labels:
+        app: test-demo-app-deployment
+    spec:
+      containers:
+      - args:
+        - sleep
+        - "3600"
+        image: radial/busyboxplus:curl
+        name: test-demo-app-deployment
