@@ -10,7 +10,7 @@ Each folder has a readme file which explains the steps to execute those files.
 
 #### docker: 
 
-This consists of files to create docker image
+This folder consists of files to create docker image
 
 #### docker compose:
 
