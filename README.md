@@ -12,7 +12,7 @@ Each folder has a readme file which explains the steps to execute those files.
 
 This folder consists of files to create docker image
 
-#### docker compose:
+#### docker-compose:
 
 This folder consists of docker-compose.yml file to deploy both the containers
 
