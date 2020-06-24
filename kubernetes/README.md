@@ -21,3 +21,20 @@ If you create a new image locally, please change the name inside the demo-app-de
 - Deploy demo-app deployment & service (which includes probes, resource quotas)
 
   Command: kubectl apply -f demo-app-deployment.yaml
+
+### To Test this deployment
+
+- Create test-demo-app deployment
+
+  Command: kubectl apply -f test-demo-app-deployment.yaml
+
+- Exec into the pod
+
+  Command: kubectl exec -it <name-of-pod> /bin/sh -n demo-ops
+
+- Execute Curl command
+
+  Command: curl demo-app-svc
+
+### Output
+![Alt text](/output/kubernetes-output.jpg?raw=true "Kubernetes Deployment Output")
