@@ -11,10 +11,13 @@ If you create a new image locally, please change the name inside the demo-app-de
 ### Steps to deploy these objects on Kubernetes clusters
 
 - Create demo-ops namespace
+
 Command: kubectl apply -f demo-ops-ns.yaml
 
 - Deploy redis deployment & service
+
 Command: kubectl apply -f redis-deployment.yaml
 
 - Deploy demo-app deployment & service (which includes probes, resource quotas)
+
 Command: kubectl apply -f demo-app-deployment.yaml
