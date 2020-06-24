@@ -7,7 +7,9 @@ This folder consists of the sample go app and the Dockerfile to create a docker 
 ### Steps to create the docker image
 
 - docker build -t {dockerImageName} .
+
 Replace the text in {dockerImageName} with the actual name of the image
 
 - docker push {dockerImageName}
+
 Replace the text in {dockerImageName} with the actual name of the image you want to push to the registry.
