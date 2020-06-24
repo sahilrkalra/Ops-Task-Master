@@ -1,0 +1,17 @@
+version: "2"
+services:
+  app:
+    image: sahilrkalra/demo-app
+    links:
+      - redis
+    environment:
+      DEMO_REDIS_ADDR: redis:6379
+      DEMO_APP_ADDR: :8000
+    ports:
+     - "8000:8000"
+  redis:
+    image: redis
+    volumes:
+      - /data:/data
+    ports:
+     - "6379:6379"
