@@ -18,4 +18,4 @@ Command: docker-compose up -d
 Command: curl localhost:8000
 
 ### Output:
-![Alt text](/docker-compose-output.jpg?raw=true "Docker Compose Output")
+![Alt text](/docker-compose/docker-compose-output.jpg?raw=true "Docker Compose Output")
