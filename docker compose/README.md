@@ -12,10 +12,12 @@ If you create a new image locally, please change the name inside the docker-comp
 ### Steps to execute this docker-compose.yml file
 
 - Execute docker-compose.yml file
-Command: docker-compose up -d
+
+  Command: docker-compose up -d
 
 - Test the application by executing the following command on the same machine where both the containers deployed by docker-compose.yml are running.
-Command: curl localhost:8000
+
+  Command: curl localhost:8000
 
 ### Output:
 ![Alt text](/output/docker-compose-output.jpg?raw=true "Docker Compose Output")
